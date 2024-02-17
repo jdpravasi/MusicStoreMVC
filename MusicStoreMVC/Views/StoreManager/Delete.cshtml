@@ -1,0 +1,17 @@
+﻿@model MusicStoreMVC.Models.Album
+
+@{ 
+    ViewBag.Title = "DELETE";
+}
+<h2>Delete Confirmation</h2>
+<p>Are you sure want to delete <strong>@Model.Title</strong> </p>
+
+@using (Html.BeginForm())
+ {
+        <p>
+            <input type="submit" value="Delete"/>
+        </p>
+        <p>
+            @Html.ActionLink("Back To List", "Index")
+        </p>
+ }
